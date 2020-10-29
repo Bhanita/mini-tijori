@@ -3,9 +3,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('investor/<int:sid>/', views.get_investor),
-    path('investor/list/', views.get_all_investors),
-    path('investor/list/<int:sid>/', views.get_all_by_id),
-    path('create/', views.create_investor),
+    path('person/<int:sid>/', views.get_person),
+    path('person/list/', views.get_details),
+    path('person/list/<int:sid>/', views.get_all_by_id),
+    path('create/', views.create_person),
     path('company/list/', views.get_all_companies),
 ]
